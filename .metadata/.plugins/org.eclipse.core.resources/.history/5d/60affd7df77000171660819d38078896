@@ -1,0 +1,12 @@
+package server;
+
+import udp.XUdp;
+
+public class Client {
+
+	 private static XUdp mXUdp;
+	 
+		public static void main(String[] args) {
+		
+		}
+}

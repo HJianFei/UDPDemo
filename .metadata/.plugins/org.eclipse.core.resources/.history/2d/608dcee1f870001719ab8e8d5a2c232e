@@ -1,0 +1,20 @@
+package listener;
+
+import bean.UdpMsg;
+import udp.XUdp;
+
+/**
+ */
+public interface UdpServerListener {
+	
+    void onStarted(XUdp XUdp);
+
+    void onStoped(XUdp XUdp);
+
+    void onSended(XUdp XUdp, UdpMsg udpMsg);
+
+    void onReceive(XUdp client, UdpMsg udpMsg);
+
+    void onError(XUdp client, String msg, Exception e);
+
+}

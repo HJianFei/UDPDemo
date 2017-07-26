@@ -1,0 +1,62 @@
+package server;
+
+import bean.BaseMsg.MsgType;
+import bean.UdpMsg;
+import listener.UdpServerListener;
+import udp.UdpServerConfig;
+import udp.XUdp;
+
+public class Server{
+
+	 private static XUdp mXUdp;
+	 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		if (mXUdp != null && mXUdp.isUdpServerRuning()) {
+            mXUdp.stopUdpServer();
+        } else {
+            if (mXUdp == null) {
+                mXUdp = XUdp.getUdpClient();
+                    mXUdp.config(new UdpServerConfig.Builder().setLocalPort(8989).create());
+                
+                mXUdp.addUdpClientListener(new UdpServerListener() {
+					
+					@Override
+					public void onStoped(XUdp XUdp) {
+						// TODO Auto-generated method stub
+						
+					}
+					
+					@Override
+					public void onStarted(XUdp XUdp) {
+						// TODO Auto-generated method stub
+						
+					}
+					
+					@Override
+					public void onSended(XUdp XUdp, UdpMsg udpMsg) {
+						// TODO Auto-generated method stub
+						
+					}
+					
+					@Override
+					public void onReceive(XUdp client, UdpMsg udpMsg) {
+						// TODO Auto-generated method stub
+						System.out.println(udpMsg.toString());
+						client.sendMsg(new UdpMsg("信息已收到", udpMsg.getTarget(), MsgType.Send));
+						
+					}
+					
+					@Override
+					public void onError(XUdp client, String msg, Exception e) {
+						// TODO Auto-generated method stub
+						
+					}
+				});
+            }
+            mXUdp.startUdpServer();
+        }
+
+	}
+
+}

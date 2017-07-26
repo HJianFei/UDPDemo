@@ -1,0 +1,25 @@
+package listener;
+
+import bean.UdpMsg;
+import udp.UdpUtils;
+
+
+/**
+ * UDP服务器
+ * @author Administrator
+ *
+ */
+public interface UdpServerListener {
+	
+	
+    void onStarted(UdpUtils XUdp);
+
+    void onStoped(UdpUtils XUdp);
+
+    void onSended(UdpUtils XUdp, UdpMsg udpMsg);
+
+    void onReceive(UdpUtils client, UdpMsg udpMsg);
+
+    void onError(UdpUtils client, String msg, Exception e);
+
+}

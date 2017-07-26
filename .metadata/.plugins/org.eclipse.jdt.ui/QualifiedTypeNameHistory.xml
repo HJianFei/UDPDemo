@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="utils.ExceptionUtils"/>
+<fullyQualifiedTypeName name="bean.BaseMsg"/>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="utils.CharsetUtil"/>
+<fullyQualifiedTypeName name="bean.TargetInfo"/>
+<fullyQualifiedTypeName name="java.awt.Component.BaselineResizeBehavior"/>
+<fullyQualifiedTypeName name="udp.XUdp"/>
+<fullyQualifiedTypeName name="utils.StringValidationUtils"/>
+<fullyQualifiedTypeName name="udp.UdpClientConfig"/>
+<fullyQualifiedTypeName name="server.Server"/>
+<fullyQualifiedTypeName name="listener.UdpClientListener"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="bean.UdpMsg"/>
+<fullyQualifiedTypeName name="bean.BaseMsg.MsgType"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,13 @@
+1500953742467	Rename type 'TcpMsg'
+1500953761994	Move compilation unit
+1500959393119	Delete element
+1500959957743	Rename type 'UdpClientListener'
+1500959972350	Rename type 'UdpListener'
+1500960166316	Delete element
+1500962219565	Rename type 'UdpClientConfig'
+1500962263416	Rename type 'XUdp'
+1500962460334	Rename field 'mXUdp'
+1500962468331	Rename field 'dupUtils'
+1500962696821	Rename field 'mUdpClientListeners'
+1500962708174	Rename field 'mUdpClientConfig'
+1501031748071	Convert local variable 'client' to field
